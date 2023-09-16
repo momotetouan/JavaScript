@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+		<title>Exo10</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ 		<link rel="stylesheet" type="text/css" href="ex10.css" />  
+    </head>
+    <body>
+		<table id="tab">
+			
+			
+			<tbody>
+				<script>
+					tab=new Array(100);
+					for(var i=0;i<100;i++){
+						tab[i]=Math.floor(Math.random()*10);
+					}
+					
+					for (var i=0; i<100; i++) {
+					if (i%10==0) document.writeln("<tr>");
+					document.writeln('<td> ' + tab[i] + ' </td>');
+					if (i%10==9) document.writeln('</tr>');
+					}
+					document.write('</table>');
+				</script>
+			</tbody>
+		</table>
+		<table id="tab">
+			
+			<tbody>
+				<script>
+					tab1=new Array(10);
+					for(var i=0;i<10;i++){
+						tab1[i]=i;
+					}
+					
+					document.write("<tr>");
+						document.write("<th>Nombre</th>");
+					for (var i=0; i<10; i++) {
+					
+					document.write('<td> ' + tab1[i] + ' </td>');
+					
+					}
+					document.write('</tr>');
+					
+				
+					tabO=new Array(10);
+					for(var h=0;h<10;h++){
+						tabO[h]=0;
+					}
+					for(var j=0;j<10;j++){
+						for(var k=0;k<100;k++){
+							if(tab[k]==j){
+								tabO[j]++;
+							}
+							
+						}
+						
+
+					}
+					document.write("<tr>");
+					document.write("<th>Nb occurences</th>");
+					for (var i=0; i<10; i++) {
+					
+					document.write('<td> ' + tabO[i] + ' </td>');
+					
+					}
+					document.write('</tr>');
+					
+				</script>
+			</tbody>
+		</table>
+
+	</body>
+</html>

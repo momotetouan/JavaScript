@@ -1,0 +1,43 @@
+#tab, #tab caption
+{
+    margin: auto;
+}
+
+#tab
+{
+    border: #DDEEFF 2px solid;
+    border-collapse: separate;
+    border-spacing: 2px;
+    empty-cells: hide;
+}
+
+#tab caption
+{
+    background-color: #DDEEFF;
+	}
+
+#tab th
+{
+    color: #996600;
+    background-color: #FFCC66;
+    border: #FFCC66 1px solid;
+   
+}
+
+#tab td
+{
+    border: #DDEEFF 1px solid;
+    padding-left: 10px;
+}
+
+#navcol
+{
+    width: 200px;
+    background-color: #F4FAFD;
+}
+
+#numcol
+{
+    width: 150px;
+}
+

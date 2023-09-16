@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+		<title>Exo11</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script text="text/javascript" src="ex11.js"></script>
+	</head>
+    <body>
+		<h1>Composez votre menu</h1>
+		<hr>
+		<p>Choisissez une entrée, un plat et un desert, puis appuyez sur le bouton "Envoi"</p>
+		<p>Entrée
+			<form id="formu">
+		<select name="menuE" >
+			<option value="12,5" >Oeufs Mayo</option>
+			<option value="15">Salade Carottes</option>
+			<option value="17">Saumon fumé</option>
+		</select>
+		Plat principal
+		<select name="menuP">
+			<option value="16">Gratin Poulet</option>
+			<option value="11">Poisson Pané</option>
+			<option value="20">Pizza 4 fromages</option>
+		</select>
+		Dessert
+		<select name="menuD" >
+			<option value="10">Yagourt </option>
+			<option value="9">Pomme</option>
+			<option value="8">Banane</option>
+		</select>
+			
+		
+	</p>
+	<input type="button" value="Envoi" onclick="calcul('formu');">
+	<p>
+		Entrée :
+		<input type="text" name="e">
+		Plat :
+		<input type="text" name="pl">
+		Dessert :
+		<input type="text" name="d">
+		Total :
+		<input type="text" name="t">
+	</p>
+</form>
+	</body>
+</html>
